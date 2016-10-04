@@ -26,7 +26,7 @@ console.log(getLength("as;dlfj3jf!#pcou4"))
 //Q4
 
 function greaterThan(param1, param2) {
-	if (param2 > param1 ) {
+	if (param1 > param2 ) {
 		return true; 
 	}
 	else {
