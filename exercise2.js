@@ -52,19 +52,35 @@ console.log(isVowel("a"))
 ////
 
 function translate(phrase) {	
-	var newWord
+	var newWord = '';
 	var vowels = ["a", "e", "i", "o", "u", "y"]
 	for(var i = 0; i < phrase.length; i += 1) {
 		
 		if(vowels.indexOf(phrase[i]) === -1) {
-			newWord += phrase[i] + "o" + phrase[i]
+			console.log(phrase[i])
+			newWord += phrase[i] + "o" + phrase[i];
+			console.log(newWord)
 		}
 
 		else {
-			newWord += phrase[i]
+			newWord += phrase[i];
 		}
 	}
 	return newWord
 }
 console.log(translate("tim"))
+
+////
+
+function reverse(word) {
+	var newWord = ""
+	for(var i = word.length-1; i > -1; i -= 1){
+		newWord += word[i]
+	}
+	return newWord
+}
+
+console.log(reverse("tim"))
+
+
 
