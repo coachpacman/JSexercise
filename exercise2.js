@@ -57,9 +57,7 @@ function translate(phrase) {
 	for(var i = 0; i < phrase.length; i += 1) {
 		
 		if(vowels.indexOf(phrase[i]) === -1) {
-			console.log(phrase[i])
 			newWord += phrase[i] + "o" + phrase[i];
-			console.log(newWord)
 		}
 
 		else {
